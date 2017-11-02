@@ -58,6 +58,7 @@ try
 
     $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
+    $mail->addAddress('bowyerpaul@btinternet.com', 'Paul Bowyer');
     $mail->addReplyTo($from);
     
     $mail->isHTML(true);
